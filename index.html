@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="stylequiz.css">
-    <title>Code Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="stylequiz.css" rel="stylesheet">
+  <title>Quiz App</title>
 </head>
 <body>
-     
- <h1>Code Quiz Challenge</h1>
-  <div class="container" id="quiz">
-    <div class="question" id="question"></div>
-        <label class="option"><input type="radio" value="1"/><span id="opt1"></span></label>
-        <label class="option"><input type="radio" value="2"/><span id="opt2"></span></label>
-        <label class="option"><input type="radio" value="3"/><span id="opt3"></span></label>
-        <label class="option"><input type="radio" value="4"/><span id="opt4"></span></label>
-    
-    
-  <button type="button"  class="next-btn" onclick="loadNextQuestion()">Next Question</button> 
+  <div class="container">
+    <h1><Code Quiz Challenge></Code></h1>
+    <div id="timer"></div>
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
   </div>
-  <div id="result" class="container result" style="display:none;">
-  </div>
-  
-  <script src="codequiz.js"></script>
+  <script defer src="codequiz.js"></script>
+  <script defer src="questions.js"></script>
 </body>
 </html>
