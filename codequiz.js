@@ -20,10 +20,10 @@ function startGame() {
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
-  setNextQuestion()
+  // setNextQuestion()
 }
 
-function setNextQuestion() {
+/* function setNextQuestion() {
   time = setInterval(myTimer, 15000);
   if (sec > 0) {
     sec = 15;
@@ -34,7 +34,7 @@ function setNextQuestion() {
   
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
-}
+} */
 
 function showQuestion(question) {
   questionElement.innerText = question.question
@@ -96,8 +96,7 @@ function myTimer() {
     if (sec == -1) {
         clearInterval(time);
         alert("Time out!! :(");
-    } else { (sec == time) 
-        clearInterval(time);
+  
     }
     
     
