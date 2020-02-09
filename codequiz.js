@@ -97,8 +97,8 @@ function clearStatusClass(element) {
         clearInterval(time);
         alert("Time out!! :(");
   
-    } */
+    } 
     
     
-};
+}; */
 
