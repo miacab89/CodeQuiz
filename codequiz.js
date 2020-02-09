@@ -23,7 +23,7 @@ function startGame() {
   // setNextQuestion()
 }
 
-/* function setNextQuestion() {
+ function setNextQuestion() {
   time = setInterval(myTimer, 15000);
   if (sec > 0) {
     sec = 15;
@@ -34,7 +34,7 @@ function startGame() {
   
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
-} */
+} 
 
 function showQuestion(question) {
   questionElement.innerText = question.question
@@ -90,7 +90,7 @@ function clearStatusClass(element) {
 
 
 
-/* function myTimer() {
+  function myTimer() {
     document.getElementById('timer').innerHTML = sec + "sec left";
     sec--;
     if (sec == -1) {
@@ -100,5 +100,5 @@ function clearStatusClass(element) {
     } 
     
     
-}; */
+}; 
 
