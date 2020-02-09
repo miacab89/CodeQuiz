@@ -90,14 +90,14 @@ function clearStatusClass(element) {
 
 
 
-function myTimer() {
+/* function myTimer() {
     document.getElementById('timer').innerHTML = sec + "sec left";
     sec--;
     if (sec == -1) {
         clearInterval(time);
         alert("Time out!! :(");
   
-    }
+    } */
     
     
 };
